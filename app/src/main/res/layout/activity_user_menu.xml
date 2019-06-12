@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:text="Main Menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="20sp"
+            android:textColor="#000000"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/textViewAboutLayout"
+            android:id="@+id/lineDivider"
+            android:background="@color/sky_blue"/>
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="#000000"
+            android:id="@+id/txtName"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"/>
+
+        <Button
+            android:text="Records"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:drawablePadding="0dp"
+            android:background="@drawable/button_design"
+            android:clickable="true"
+            android:id="@+id/btnRecords"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_biceps"
+                            android:gravity="center|bottom"
+                            android:text="BICEPS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnBiceps"/>
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_chest"
+                            android:gravity="center|bottom"
+                            android:text="CHEST"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnChest"/>
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_shoulder"
+                            android:gravity="center|bottom"
+                            android:text="Shoulders"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnShoulder"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_triceps"
+                            android:gravity="center|bottom"
+                            android:text="TRICEPS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnTriceps"/>
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_abs"
+                            android:gravity="center|bottom"
+                            android:text="ABS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnAbs"/>
+                        <Button
+                            android:layout_gravity="center"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@mipmap/ic_legs"
+                            android:gravity="center|bottom"
+                            android:text="LEGS"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textStyle="bold"
+                            android:scaleType="fitCenter"
+                            android:id="@+id/btnLegs"/>
+
+                    </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </TableLayout>
+
+</LinearLayout>

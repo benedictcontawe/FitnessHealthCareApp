@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/dark_black</item>
+        <item name="colorAccent">@color/sky_blue</item>
+    </style>
+
+    <style name="AppTheme.CustomTransparentStatusBar">
+        <!--For API 23 and above Only (statusBarColor,windowLightStatusBar) -->
+        <item name="android:statusBarColor" tools:targetApi="lollipop">@color/transparent</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:listDividerAlertDialog">@color/sky_blue</item>
+        <item name="alertDialogCenterButtons">true</item>
+    </style>
+
+    <style name="AppTheme.CustomThemeForPopUp">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
+</resources>
